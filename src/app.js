@@ -1,10 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+
 const temperaturaRoute = require('./api/routes/temperaturaRoute');
 const presionRoute = require('./api/routes/presionRoute');
 const velocidadRoute = require('./api/routes/velocidadRoute');
 const caudalRoute = require('./api/routes/caudalRoute');
+
 
 const app = express();
 
