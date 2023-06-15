@@ -8,12 +8,14 @@ const RegistryDto = require('../dtos/registryDTO');
  */
 const toEntity = (registryDto) => {
   const RegistryEntity = new Registry(
+
     registryDto.registryId,
     registryDto.temperatura,
     registryDto.presion,
     registryDto.caudal,
     registryDto.velocidad,
     registryDto.cbdEstimado,
+
   );
 
   return RegistryEntity;
@@ -26,12 +28,14 @@ const toEntity = (registryDto) => {
  */
 const toDto = (registryEntity) => {
   const registryDto = new RegistryDto(
+
     registryEntity.registryId,
     registryEntity.temperatura,
     registryEntity.presion,
     registryEntity.caudal,
     registryEntity.velocidad,
     registryEntity.cbdEstimado,
+
   );
 
   return registryDto;
