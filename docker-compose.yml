@@ -7,6 +7,7 @@ services:
       - POSTGRES_USER=qinux
       - POSTGRES_PASSWORD=Thebeatles97?
       - POSTGRES_DB=api-broker
+      - TZ=America/Mexico_City
     ports:
       - '7000:5432'
     volumes:
